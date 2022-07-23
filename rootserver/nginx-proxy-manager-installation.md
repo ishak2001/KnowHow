@@ -1,2 +1,0 @@
-# Nginx Proxy Manager Installation
-
