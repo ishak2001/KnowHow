@@ -50,7 +50,7 @@ add-apt-repository ppa:ondrej/php
 apt update
 ```
 
-* Installiere den Apache2 Webserver
+# Installiere den Apache2 Webserver
 ```bash
 apt install apache2 -y
 ```
@@ -60,7 +60,7 @@ apt install apache2 -y
 apt install php8.0 php8.0-cli php8.0-common php8.0-curl php8.0-gd php8.0-intl php8.0-mbstring php8.0-mysql php8.0-opcache php8.0-readline php8.0-xml php8.0-xsl php8.0-zip php8.0-bz2 libapache2-mod-php8.0 -y
 ```
 
-* Installiere MySQL
+# Installiere MySQL
 ```bash
 apt install mariadb-server mariadb-client -y
 ```
@@ -92,7 +92,7 @@ cd /usr/share
 ```
 in das Verzeichnis wo PhpMyAdmin installiert wird.
 
-* Lade PhpMyAdmin herunter
+# Lade PhpMyAdmin herunter
 ```bash
 wget https://www.phpmyadmin.net/downloads/phpMyAdmin-latest-all-languages.zip -O phpmyadmin.zip
 ```
