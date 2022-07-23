@@ -18,7 +18,3 @@
 
 * [Minecraft Start](scripts/minecraft-start.md)
 * [Minecraft Auto Start](scripts/minecraft-auto-start.md)
-
-## WINDOWS
-
-* [Page 3](windows/page-3.md)
