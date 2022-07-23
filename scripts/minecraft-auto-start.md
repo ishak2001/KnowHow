@@ -1,14 +1,14 @@
 # Minecraft Automatische Startdatei
 
 * Damit dein Minecraft Server nach einem Crash Automatisch Hochfährt
-* Erstelle eine start.sh datei:
+* Erstelle eine ```start.sh``` datei:
 
 ```bash
 nano start.sh
 ```
 
-* Füge diesen code ein und drücke "STRG" + "O" Danach "Enter"
-* Um das gespeicherte Terminal zu schließen, drücke "Strg" + "X" 
+* Füge diesen code ein und drücke ```STRG + O``` Danach ```Enter```
+* Um das gespeicherte Terminal zu schließen, drücke ```Strg + X```
 
 ```bash
 while true
