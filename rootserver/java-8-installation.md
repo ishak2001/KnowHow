@@ -1,4 +1,4 @@
-# Setup Java 8
+# Java 8 Installation
 
 
 Installieren Sie die benötigten Pakete
