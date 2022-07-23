@@ -55,6 +55,9 @@ echo "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/docke
   $(lsb_release -cs) stable" | sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
 ```
 
+{% endtab %}
+{% endtabs %}
+
 ```bash
 sudo apt update
 ```
@@ -84,6 +87,3 @@ sudo curl -L "https://github.com/docker/compose/releases/download/1.29.2/docker-
 ```bash
 sudo chmod +x /usr/local/bin/docker-compose
 ```
-
-{% endtab %}
-{% endtabs %}
