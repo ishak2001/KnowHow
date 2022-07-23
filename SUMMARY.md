@@ -12,7 +12,7 @@
 
 ## DOMAINS
 
-* [Page 2](domains/page-2.md)
+* [DNS Einträge erstellen](domains/dns-eintraege-erstellen.md)
 
 ## Scripts
 
