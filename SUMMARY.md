@@ -12,9 +12,6 @@
 * [Teamspeak3 Server Installation](rootserver/teamspeak3-server-installation.md)
 * [Nginx Proxy Manager Installation](rootserver/nginx-proxy-manager-installation.md)
 
-## DOMAINS
-
-
 ## Scripts
 
 * [Minecraft Auto Start](scripts/minecraft-auto-start.md)

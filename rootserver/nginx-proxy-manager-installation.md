@@ -1,12 +1,8 @@
----
-description:
-  für die Installation ist Docker und Docker-compose nötig. Falls du diese nicht
-  installiert hast, kannst du dies hier ganz schnell nachholen -> [Docker Installation](rootserver/docker-installation.md)
----
-
 # Nginx Proxy Manager Installation
 
-
+```
+// <h1></h1>
+```
 
 * Aktualisiere die Paketlisten & installiere die Updates.
 
