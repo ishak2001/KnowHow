@@ -1,5 +1,5 @@
 ---
-description: >-
+description:
   für die Installation ist Docker und Docker-compose nötig. Falls du diese nicht
   installiert hast, kannst du dies hier ganz schnell nachholen -> [Docker Installation](rootserver/docker-installation.md)
 ---
