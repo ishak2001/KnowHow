@@ -12,8 +12,10 @@
 * [Teamspeak3 Server Installation](rootserver/teamspeak3-server-installation.md)
 * [Nginx Proxy Manager Installation](rootserver/nginx-proxy-manager-installation.md)
 * [Portainer Installation](rootserver/portainer-installation.md)
-* [Virtualhost Apache2](rootserver/virtualhost-apache2.md)
-* [Virtualhost Redirect Apache2](rootserver/virtualhost-redirect-apache2.md)
+* [Apache2 Installation](rootserver/apache2-installation.md)
+* [Nginx Installation](rootserver/nginx-installation.md)
+* [Virtualhost (Apache2)](rootserver/virtualhost-apache2.md)
+* [Virtualhost Redirect (Apache2)](rootserver/virtualhost-redirect-apache2.md)
 
 ## Scripts
 
