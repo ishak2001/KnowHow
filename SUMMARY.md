@@ -20,3 +20,7 @@
 ## Scripts
 
 * [Minecraft Auto Start](scripts/minecraft-auto-start.md)
+
+## Windows
+
+* [OEMInformation](windows/oeminformation.md)
