@@ -1,4 +1,4 @@
-# Nextcloud, Apache2 und MySQL Installation
+# Nextcloud Installation
 
 * Aktualisiere die Paketlisten & installiere die Updates.
 
@@ -12,11 +12,12 @@ apt update && apt upgrade -y
 apt install ca-certificates nano lsb-release gnupg apt-transport-https curl unzip -y
 ```
 
-Wähle dein Betriebssystem aus.
-Solltest du nicht wissen, welches Betriebssystem du verwendest, kannst du dies mit dem Befehl
+Wähle dein Betriebssystem aus. Solltest du nicht wissen, welches Betriebssystem du verwendest, kannst du dies mit dem Befehl
+
 ```bash
 cat /etc/issue
 ```
+
 nachschauen.
 
 {% tabs %}
@@ -46,78 +47,99 @@ add-apt-repository ppa:ondrej/php
 {% endtabs %}
 
 * Aktualisiere noch einmal die Paketlisten
+
 ```bash
 apt update
 ```
-## Installation von Apache2
+
+### Installation von Apache2
+
 * Installiere den Apache2 Webserver
+
 ```bash
 apt install apache2 -y
 ```
-## Installation von PHP
+
+### Installation von PHP
+
 * Installiere PHP8 sowie die PHP-Module
+
 ```bash
 apt install php8.0 php8.0-cli php8.0-common php8.0-curl php8.0-gd php8.0-intl php8.0-mbstring php8.0-mysql php8.0-opcache php8.0-readline php8.0-xml php8.0-xsl php8.0-zip php8.0-bz2 libapache2-mod-php8.0 -y
 ```
-## Installation von PHPMyAdmin
+
+### Installation von PHPMyAdmin
+
 * Installiere MySQL
+
 ```bash
 apt install mariadb-server mariadb-client -y
 ```
 
 Schließe die MySQL Installation ab
+
 {% tabs %}
 {% tab title="Debian 10 & Ubuntu" %}
-Gebe den Befehl 
-```bash
-mysql_secure_installation
-``` 
-ein. Bei der ersten Abfrage des aktuellen Passworts drücke einfach "Enter". Bestätige die nächste Frage bzgl. der Änderung des Root-Passworts mit "Enter". Nun musst du ein Passwort für den Root-Benutzer des MariaDB-Servers vergeben. Während der Eingabe erscheinen keine Zeichen, das ist jedoch normal. Bestätige alle darauffolgenden Fragen (Löschung des anonymen Benutzers, Verbieten des externen Root-Logins aus Sicherheitsgründen, Entfernen der Testdatenbank und Aktualisieren der Rechte) ebenfalls mit "Enter".
+Gebe den Befehl
 
-{% endtab %}
-
-{% tab title="Debian 11" %}
-Gebe den Befehl 
 ```bash
 mysql_secure_installation
 ```
-ein. Bei der ersten Abfrage des aktuellen Passworts drücke einfach "Enter". Gebe bei der anschließenden Frage bzgl. des Wechsels zur Unix-Socket-Authentifizierung "n" ein und drücke die "Enter"-Taste. Bestätige die nächste Frage bzgl. der Änderung des Root-Passworts mit "Enter". Nun musst du ein Passwort für den Root-Benutzer des MariaDB-Servers vergeben. Während der Eingabe erscheinen keine Zeichen, das ist jedoch normal. Bestätige alle darauffolgenden Fragen (Löschung des anonymen Benutzers, Verbieten des externen Root-Logins aus Sicherheitsgründen, Entfernen der Testdatenbank und Aktualisieren der Rechte) ebenfalls mit "Enter".
 
+ein. Bei der ersten Abfrage des aktuellen Passworts drücke einfach "Enter". Bestätige die nächste Frage bzgl. der Änderung des Root-Passworts mit "Enter". Nun musst du ein Passwort für den Root-Benutzer des MariaDB-Servers vergeben. Während der Eingabe erscheinen keine Zeichen, das ist jedoch normal. Bestätige alle darauffolgenden Fragen (Löschung des anonymen Benutzers, Verbieten des externen Root-Logins aus Sicherheitsgründen, Entfernen der Testdatenbank und Aktualisieren der Rechte) ebenfalls mit "Enter".
+{% endtab %}
+
+{% tab title="Debian 11" %}
+Gebe den Befehl
+
+```bash
+mysql_secure_installation
+```
+
+ein. Bei der ersten Abfrage des aktuellen Passworts drücke einfach "Enter". Gebe bei der anschließenden Frage bzgl. des Wechsels zur Unix-Socket-Authentifizierung "n" ein und drücke die "Enter"-Taste. Bestätige die nächste Frage bzgl. der Änderung des Root-Passworts mit "Enter". Nun musst du ein Passwort für den Root-Benutzer des MariaDB-Servers vergeben. Während der Eingabe erscheinen keine Zeichen, das ist jedoch normal. Bestätige alle darauffolgenden Fragen (Löschung des anonymen Benutzers, Verbieten des externen Root-Logins aus Sicherheitsgründen, Entfernen der Testdatenbank und Aktualisieren der Rechte) ebenfalls mit "Enter".
 {% endtab %}
 {% endtabs %}
 
 * Wechsel mit dem Befehl
+
 ```bash
 cd /usr/share
 ```
+
 in das Verzeichnis, wo PhpMyAdmin installiert wird.
 
 * Lade PhpMyAdmin herunter
+
 ```bash
 wget https://www.phpmyadmin.net/downloads/phpMyAdmin-latest-all-languages.zip -O phpmyadmin.zip
 ```
 
 * Entpacke das Archiv
+
 ```bash
 unzip phpmyadmin.zip
 ```
 
 * Entferne das heruntergeladene Archiv
+
 ```bash
 rm phpmyadmin.zip
 ```
 
 Nenne das PhpMyAdmin Verzeichnis um
+
 ```bash
 mv phpMyAdmin-*-all-languages phpmyadmin
 ```
 
 Vergebe die benötigten Rechte
+
 ```bash
 chmod -R 0755 phpmyadmin
 ```
 
 * Erstelle die Apache Konfigurationsdatei
+
 ```bash
 echo "Alias /phpmyadmin /usr/share/phpmyadmin
 
@@ -139,21 +161,25 @@ echo "Alias /phpmyadmin /usr/share/phpmyadmin
 ```
 
 * Aktiviere die Apache Konfigurationsdatei
+
 ```bash
 a2enconf phpmyadmin
 ```
 
 * Reloade den Apache Service
+
 ```bash
 systemctl reload apache2
 ```
 
 * Erstelle das Temporäre Verzeichnis für PhpMyAdmin
-```bash 
+
+```bash
 mkdir /usr/share/phpmyadmin/tmp/
 ```
 
 * Gebe dem Webnutzer die Berechtigung, auf das temporäre Verzeichnis zuzugreifen.
+
 ```bash
 chown -R www-data:www-data /usr/share/phpmyadmin/tmp/
 ```
@@ -172,7 +198,7 @@ mysql -u root
 UPDATE mysql.user SET plugin = 'mysql_native_password' WHERE user = 'root' AND plugin = 'unix_socket';
 ```
 
-```bash 
+```bash
 FLUSH PRIVILEGES;
 ```
 {% endtab %}
@@ -185,59 +211,68 @@ mysql -u root
 ```
 
 * Erstelle einen neuen Benutzer. Trage bei "username" einen Benutzernamen und bei "password" ein Passwort ein.
+
 ```bash
 CREATE USER 'username'@'localhost' IDENTIFIED BY 'password';
 ```
 
 * Dieser Befehl weißt deinem Nutzernamen alle Rechte, die man als Inhaber braucht
+
 ```bash
 GRANT ALL PRIVILEGES ON *.* TO 'username'@'localhost' WITH GRANT OPTION;
 ```
 
-```bash 
+```bash
 exit
 ```
 {% endtab %}
 {% endtabs %}
 
-## Installation von Nextcloud
+### Installation von Nextcloud
 
 * Navigiere zum path vom Web-Server
-```bash 
+
+```bash
 cd /var/www/html
 ```
 
 * Lade Nextcloud herunter
-```bash 
+
+```bash
 wget https://download.nextcloud.com/server/releases/latest.tar.bz2
 ```
 
 * Entpacke Nextcloud
-```bash 
+
+```bash
 tar xfvj latest.tar.bz2
 ```
 
 * Lösche das Nextcloud Archiv
-```bash 
+
+```bash
 rm latest.tar.bz2
 ```
 
-* Aktiviere Apache2 mod_rewrite
-```bash 
+* Aktiviere Apache2 mod\_rewrite
+
+```bash
 a2enmod rewrite
 ```
 
 * Starte Apache2 neu
-```bash 
+
+```bash
 systemctl restart apache2
 ```
 
 * Gebe dem Webserver das Besitzerrecht.
-```bash 
+
+```bash
 chown -R www-data:www-data /var/www/html/nextcloud/
 ```
 
-## Nextcloud Nutzer anlegen
+### Nextcloud Nutzer anlegen
 
 ![Gebe in deinem Browser deine IP/phpmyadmin ein.](https://bilderupload.org/image/a98a79993-screenshot-2022-06-17-173.png)
 
@@ -257,4 +292,4 @@ Scrolle runter und drücke auf "OK"](https://bilderupload.org/image/a7c980993-an
 Trage bei den unteren Feldern (Datenbank Informationen) deine MySQL Daten ein.
 und drücke auf: "Installieren"](https://bilderupload.org/image/3d8e82457-nextcloudfertig.png)
 
-# Nun ist die Installation von Nextcloud erfolgreich abgeschlossen
+## Nun ist die Installation von Nextcloud erfolgreich abgeschlossen
