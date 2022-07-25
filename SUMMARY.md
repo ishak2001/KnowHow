@@ -14,9 +14,7 @@
 
 ## DOMAINS
 
-* [DNS Einträge erstellen](domains/dns-eintraege-erstellen.md)
 
 ## Scripts
 
-* [Minecraft Start](scripts/minecraft-start.md)
 * [Minecraft Auto Start](scripts/minecraft-auto-start.md)
