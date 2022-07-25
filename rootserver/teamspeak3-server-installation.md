@@ -1,4 +1,4 @@
-# Teamspeak3 Server Installation
+# Teamspeak3 Server
 
 * Aktualisiere die Paketlisten & installiere die Updates.
 
@@ -15,6 +15,7 @@ apt update && apt upgrade -y
 ```bash
 adduser ts3
 ```
+
 {% endtab %}
 
 {% tab title="Außen nicht erreichbar" %}
@@ -23,10 +24,12 @@ adduser ts3
 ```bash
 adduser --disabled-login ts3
 ```
+
 {% endtab %}
 {% endtabs %}
 
 ![Bei den Folgenden fragen kannst du die mit der "Enter" Taste durchklicken und am Ende mit "Y/J" bestätigen](https://bilderupload.org/image/7d9157172-adduser-ts3.png)
+
 
 * Nun navigiere zum ts3 Verzeichnis
 
@@ -34,7 +37,7 @@ adduser --disabled-login ts3
 cd /home/ts3
 ```
 
-## Teamspeak3 Installation
+# Teamspeak3 Installation
 
 * Laden den Teamspeak3 Server herunter.
 
@@ -99,11 +102,13 @@ cd /home/ts3/teamspeak3-server_linux_amd64
 ![hier siehst du dein teamspeak3 token. gebe diese in teamspeak ein. Vergesse nicht dein Token zu Kopieren oder abzuspeichern](https://bilderupload.org/image/3eb657093-ts3-daten.png)
 
 * Verbinde dich auf deinen Teamspeak Server und verwende den Berechtigungsschlüssel.
-* nun kannst du wieder in dein Terminal gehen und drücke die Tastenkombination
+
+
+* nun kannst du wieder in dein Terminal gehen und drücke die Tastenkombination 
 * STRG + C und starte den Server nochmal, damit der Server im Hintergrund weiterläuft
 
 ```bash
 ./ts3server_startscript.sh start
 ```
 
-## Die Installation vom Teamspeak3 Server ist abgeschlossen
+# Die Installation vom Teamspeak3 Server ist abgeschlossen
