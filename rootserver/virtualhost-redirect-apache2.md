@@ -122,7 +122,7 @@ Um das Zertifikat automatisch auf deinem Apache Webserver einrichten zu lassen, 
 certbot --apache
 ```
 
-1. Gebe deine E-mail-Adresse ein
+1. Gebe deine E-Mail Adresse ein
 2. Akzeptiere die Terms of Service
-3. kannst du die erstellte/Aufgelistete Domain oder Sub-Domain Auswhälen
-4. Das Zertifikat ist jetzt auf deiner Domain
+3. kannst du die erstellte/Aufgelistete Domain / Sub-Domain Auswählen
+4. Dein Zertifikat wurde nun ausgestellt
