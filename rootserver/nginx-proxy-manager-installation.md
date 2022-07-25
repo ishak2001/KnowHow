@@ -1,6 +1,6 @@
 # Nginx Proxy Manager Installation
 
-{% hint style="info" %}
+{% hint style="warning" %}
 für die Installation ist Docker nötig. Falls du diese nicht installiert hast, kannst du dies hier ganz schnell nachholen -> [Docker Installation](docker-installation.md)
 {% endhint %}
 
