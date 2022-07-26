@@ -6,7 +6,7 @@
 regedit
 ```
 
-* Nachdem `regedit` (Registrierungs editor) geöffnet ist navigiere in diesem Path:
+* Nachdem `regedit` (Registrierungseditor) geöffnet ist, navigiere in diesem Path:
 
 ```bash
 HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\OEMInformation
