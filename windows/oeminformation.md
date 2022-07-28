@@ -1,4 +1,4 @@
-# OEMInformation
+# OEMInformation einrichten
 
 * Drücke `Windows` + `R` und gebe folgendes ein:
 
