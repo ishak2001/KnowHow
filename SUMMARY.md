@@ -23,4 +23,4 @@
 
 ## Windows
 
-* [OEMInformation](windows/oeminformation.md)
+* [OEMInformation einrichten](windows/oeminformation.md)
