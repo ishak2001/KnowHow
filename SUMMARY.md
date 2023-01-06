@@ -16,6 +16,7 @@
 * [Nginx Installation](rootserver/nginx-installation.md)
 * [Virtualhost (Apache2)](rootserver/virtualhost-apache2.md)
 * [Virtualhost Redirect (Apache2)](rootserver/virtualhost-redirect-apache2.md)
+* [SSL Zertifikat Installation](rootserver/ssl-zertifikat-installation.md)
 
 ## Scripts
 
