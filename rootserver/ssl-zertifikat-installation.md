@@ -35,8 +35,6 @@ certbot --apache
 
 2. Akzeptiere die Terms of Service
 
-3. Wähle aus, ob eine Gemeinnützige Organisation (Electronic Frontier Foundation) deine E-Mail-Adresse bekommen darf.
-
-4. Gebe deinen Domainnamen ein. Falls eine Subdomain vorhanden ist gebe diese mit an.
+3. Gebe deinen Domainnamen ein. Falls eine Subdomain vorhanden ist gebe diese mit an.
 
 Das Zertifikat ist jetzt auf deinem Apache Webserver installiert.
