@@ -37,6 +37,6 @@ certbot --apache
 
 3. Wähle aus, ob eine Gemeinnützige Organisation (Electronic Frontier Foundation) deine E-Mail-Adresse bekommen darf.
 
-4. Gebe deinen Domainnamen ein (z.B. mc-host24.de). Falls eine Subdomain vorhanden ist gebe diese mit an. (z.B. docs.mc-host24.de)
+4. Gebe deinen Domainnamen ein. Falls eine Subdomain vorhanden ist gebe diese mit an. (z.B. docs.mc-host24.de)
 
 Das Zertifikat ist jetzt auf deinem Apache Webserver installiert.
