@@ -17,6 +17,7 @@
 * [Virtualhost (Apache2)](rootserver/virtualhost-apache2.md)
 * [Virtualhost Redirect (Apache2)](rootserver/virtualhost-redirect-apache2.md)
 * [SSL Zertifikat Installation](rootserver/ssl-zertifikat-installation.md)
+* [Python3 Installation](rootserver/python3-installation.md)
 
 ## Scripts
 
