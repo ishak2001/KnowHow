@@ -26,3 +26,7 @@
 ## Windows
 
 * [OEMInformation einrichten](windows/oeminformation.md)
+
+## Raspberry Pi
+
+* [LAMP (Apache2, MySQL und PHP8.2)](raspberry-pi/minecraft-auto-start.md)
