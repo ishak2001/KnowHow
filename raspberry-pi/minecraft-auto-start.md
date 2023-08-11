@@ -1,14 +1,14 @@
 # LAMP (Apache2, MySQL und PHP8.2)
 
-* Damit dein Minecraft Server nach einem Crash Automatisch Hochfährt
-* Erstelle eine `start.sh` datei:
+* Für eine Automatische Installation, so führe diesen Script/Command aus:
 
 ```bash
-nano start.sh
+Coming Soon
 ```
 
-* Füge diesen code ein und drücke `STRG + O` Danach `Enter`
-* Um das gespeicherte Terminal zu schließen, drücke `Strg + X`
+
+
+* Manuelle Installation
 
 ```bash
 while true
