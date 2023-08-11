@@ -29,4 +29,5 @@
 
 ## Raspberry Pi
 
+* [LAMP (Apache2, MySQL und PHP8.2)](raspberry-pi/lamp-apache2-mysql-und-php8.2.md)
 * [LAMP (Apache2, MySQL und PHP8.2)](raspberry-pi/minecraft-auto-start.md)
