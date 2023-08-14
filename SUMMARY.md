@@ -23,10 +23,10 @@
 
 * [Minecraft Auto Start](scripts/minecraft-auto-start.md)
 
+## Automatically Script
+
+* [LAMPP (Apache2, MySQL und PHP8.2)](automatically-script/lampp-apache2-mysql-und-php8.2.md)
+
 ## Windows
 
 * [OEMInformation einrichten](windows/oeminformation.md)
-
-## Raspberry Pi
-
-* [LAMP (Apache2, MySQL und PHP8.2)](raspberry-pi/lamp-apache2-mysql-und-php8.2.md)
