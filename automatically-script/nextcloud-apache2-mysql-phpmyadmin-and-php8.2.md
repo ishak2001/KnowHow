@@ -1,6 +1,10 @@
 # Nextcloud (Apache2, MySQL, phpMyAdmin and PHP8.2)
 
-### Automatische Installation
+{% hint style="warning" %}
+Achtung: Beim Ausführen des Skripts werden zwei Passwortabfragen erfolgen: einmal für den SQL-Admin-Benutzer und einmal für den Nextcloud-Benutzer. Nachdem diese Passworteingaben erfolgt sind, wird das Skript automatisch installiert und fertiggestellt."
+{% endhint %}
+
+\## Automatische Installation
 
 * Für eine Automatische Installation, so führe diesen Befehl im Terminal aus:
 
