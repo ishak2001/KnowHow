@@ -26,6 +26,7 @@
 ## Automatically Script
 
 * [LAMPP (Apache2, MySQL und PHP8.2)](automatically-script/lampp-apache2-mysql-und-php8.2.md)
+* [Lemp (Nginx, MySQL und PHP8.3)](automatically-script/lemp-nginx-mysql-und-php8.3.md)
 * [Docker (Docker, Composer)](automatically-script/docker-docker-composer.md)
 * [Nextcloud (Apache2, MySQL, phpMyAdmin and PHP8.2)](automatically-script/nextcloud-apache2-mysql-phpmyadmin-and-php8.2.md)
 * [Python3.11](automatically-script/python3.11.md)
