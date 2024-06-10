@@ -1,6 +1,6 @@
 # Lemp (Nginx, MySQL und PHP8.3)
 
-\## Automatische Installation
+### Automatische Installation
 
 * Für eine Automatische Installation, so führe diesen Befehl im Terminal aus:
 
