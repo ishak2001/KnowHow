@@ -32,6 +32,8 @@
 * [Python3.11](automatically-script/python3.11.md)
 * [Java8](automatically-script/java8.md)
 * [Java11](automatically-script/java11.md)
+* [Java21](automatically-script/java11-1.md)
+* [Minecraft Server 1.21](automatically-script/minecraft-server-1.21.md)
 
 ## Windows
 
